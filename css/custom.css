@@ -1,0 +1,147 @@
+#exampleSlider {
+  position: relative;
+}
+@media (max-width: 767px) {
+  #exampleSlider {
+  }
+}
+#exampleSlider .MS-content {
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  #exampleSlider .MS-content {
+    margin: 0;
+  }
+}
+#exampleSlider .MS-content .item {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+
+  border-right: none;
+  width: 20%;
+}
+@media (max-width: 1200px) {
+  #exampleSlider .MS-content .item {
+    width: 25%;
+  }
+}
+@media (max-width: 992px) {
+  #exampleSlider .MS-content .item {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 767px) {
+  #exampleSlider .MS-content .item {
+    width: 50%;
+  }
+}
+@media (max-width: 420px) {
+  #exampleSlider .MS-content .item {
+    width: 100%;
+  }
+}
+#exampleSlider .MS-content .item p {
+  font-size: 30px;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0;
+  padding: 10px 0;
+}
+#exampleSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  outline: 0;
+  top: 35px;
+}
+@media (max-width: 767px) {
+  #exampleSlider .MS-controls button {
+    display: none;
+  }
+}
+#exampleSlider .MS-controls button:hover {
+  cursor: pointer;
+}
+#exampleSlider .MS-controls .MS-left {
+  left: 10px;
+}
+@media (max-width: 992px) {
+  #exampleSlider .MS-controls .MS-left {
+    left: -2px;
+  }
+}
+#exampleSlider .MS-controls .MS-right {
+  right: 10px;
+}
+@media (max-width: 992px) {
+  #exampleSlider .MS-controls .MS-right {
+    right: -2px;
+  }
+}
+.menu_btn {
+  background: white;
+  border-top: solid 4px #fff;
+  border-color: white;
+  border-radius: 0%;
+  padding: 30px 20px;
+  color: black;
+  box-shadow: none;
+  transition: all ease 1s;
+}
+.menu_btn:hover {
+  color: #ed1c24;
+  background: none;
+  border-top: solid 4px #ed1c24;
+}
+.menu_btn:focus {
+  color: black;
+  text-decoration: none;
+  background: none;
+}
+.navbar-nav > li:hover > .dropdown > .menu_btn:after {
+  display: block;
+}
+.menu_btn:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ed1c24;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  margin-left: -6px;
+  content: "";
+  display: none;
+}
+@media (max-width: 991px) {
+  .menu_btn {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .menu_btn {
+    font-size: 18px;
+    padding: 10px 12px;
+  }
+
+  .menu_btn:hover {
+    border-top: none;
+  }
+  .navbar-nav > li:hover > .dropdown > .menu_btn:after {
+    display: none;
+  }
+}
+#header.fiexd .navbar-nav > li > .dropdown > .menu_btn {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header .navbar-nav > li > .open > .dropdown-menu > a:hover {
+  color: black;
+}
